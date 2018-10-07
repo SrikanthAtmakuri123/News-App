@@ -1,0 +1,25 @@
+<h1 style="text-align:center">Headlines</h1>
+
+<table *ngFor="let x of articles">
+    <tr>
+      <td rowspan=2><img src="{{x.urlToImage}}" style="max-width:300px;max-height:120px;"/></td>
+    
+      <td>
+          <tr>
+              <td>
+                  <h2>{{x.title}}</h2>
+                </td>
+            </tr>
+            <tr>
+                <td><p>{{x.description}}</p></td>
+            </tr>
+            <tr>
+                <td><a (click)=gotointernalNews()>{{x.url}}</a></td>
+            </tr>
+        </td>
+    
+    
+
+</tr>
+    
+</table>
